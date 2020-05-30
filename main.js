@@ -41,8 +41,8 @@ const isEvenI = function(input) {
 
     while(input > 1) input -= 2;
 
-    if(!input) return true;
-    else return false;
+    if(!input)  return true;
+    else        return false;
 }
 
 const isEvenR = function(input) {
@@ -110,7 +110,7 @@ const reverseI = function(str) {
 }
 
 const reverseR = function(str) {
-    if(!str.length)         return '';
+    if(!str.length)             return '';
     else if(str.length == 1)    return str[0];
     else                        return str[str.length - 1] + reverseR(str.slice(0, str.length - 1));
 }
